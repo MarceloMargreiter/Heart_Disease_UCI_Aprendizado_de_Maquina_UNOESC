@@ -50,5 +50,7 @@ print(f'A acurácia do modelo é de {acuracia:.2%}')
 # Biblioteca com várias funções úteis para processamento paralelo 
 import joblib   
  
-# Grava em disco o modelo treinado treinado em um arquivo no formato 'pickle' 
-joblib.dump(modelo, 'modelo_xgboost.pkl')
+# Grava em disco o modelo treinado em um arquivo no formato 'pickle'
+medianas = X.median ()                      # Calcula as medianas
+joblib.dump(modelo, 'modelo_xgboost.pkl')   # Grava em disco o modelo treinado
+joblib.dump(medianas, 'medianas.pkl')      # Grava em disco as medianas dos atributos calculadas

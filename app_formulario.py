@@ -9,8 +9,11 @@ import numpy as np
  
 # Carrega o modelo de IA 
 modelo = joblib.load('modelo_xgboost.pkl')
- 
- 
+medianas = joblib.load('medianas.pkl')
+
+
+
+
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP]) 
  
 formulario = dbc.Container([ 
@@ -149,6 +152,9 @@ thal]],
         columns = ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 
 'oldpeak', 'slope', 'ca', 'thal'] 
     ) 
+
+    # Preenche valores em branco com as medianas 
+    entradas_usuario.fillna(medianas, inplace=True) 
  
     # oldpeak é float 
     entradas_usuario['oldpeak'] = entradas_usuario['oldpeak'].astype(np.float64) 
