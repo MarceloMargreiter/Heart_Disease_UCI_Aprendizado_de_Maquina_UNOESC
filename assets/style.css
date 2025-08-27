@@ -1,0 +1,42 @@
+
+body {                                   /* Cor do background geral do dashboard */ 
+    background-color: #cfd5db;           /* Cinza claro */ 
+    font-family: 'Segoe UI', sans-serif; /* Fonte Segoe UI */ 
+} 
+ 
+.custom-title {        /* Formatação do título */ 
+    color: #153d58;    /* Azul */ 
+    font-weight: bold; /* Negrito */ 
+} 
+ 
+.custom-subtitle {      /* Formatação do subtítulo */ 
+    color: #343a40;     /* Cinza */ 
+    font-style: italic; /* Itálico */ 
+} 
+ 
+.custom-label {  /* Formatação do label */ 
+} 
+ 
+.custom-select {                    /* Cor do select e alterações de estilo */ 
+    color: blue;  
+    font-weight: bold;  
+    background-color: transparent;  /* Fundo transparente */ 
+} 
+ 
+.custom-select option {          /* Cor das opções do select */ 
+    background-color: #cfd2d6;   /* Cinza claro para o fundo */ 
+    color: #343a40;              /* Cinza escuro para a fonte */ 
+} 
+ 
+.custom-input {                    /* Cor do input e alterações de estilo */ 
+    color: blue;                    
+    font-weight: bold;  
+    background-color: transparent;  
+ 
+} 
+ 
+::placeholder {                    /* Cor do placeholder do input e alterações de estilo */  
+    font-style: italic; 
+    font-weight: normal; 
+    background-color: transparent;  
+}

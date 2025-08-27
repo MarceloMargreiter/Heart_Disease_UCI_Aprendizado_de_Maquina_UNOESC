@@ -45,7 +45,7 @@ preds = modelo.predict(X_test)
 from sklearn.metrics import accuracy_score 
  
 acuracia = accuracy_score(y_test, preds) 
-print(f'A acurácia do modelo é de {acuracia:.2%}') 
+print(f'\n→ A acurácia do modelo é de {acuracia:.2%}\n') 
  
 # Biblioteca com várias funções úteis para processamento paralelo 
 import joblib   
