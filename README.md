@@ -1,5 +1,5 @@
 # Heart_Disease_UCI_Aprendizado_de_Maquina_UNOESC
-Trabalho para disciplina de Aprendizado de Máquina - UNOESC
+**Trabalho para disciplina de Aprendizado de Máquina - UNOESC**
 
 
 ## Tecnologias utilizadas
@@ -15,22 +15,44 @@ Trabalho para disciplina de Aprendizado de Máquina - UNOESC
 - Scikit-learn
 - XGBoost
 - Git/Github
-- Anaconda Promt
+- Google Cloud
+- Docker
 
 ## Como executar o projeto
-1→ Crie o ambiente virtual python e instale as dependencias do projeto:
-```bash
-conda activate ml 
 
-python -m venv .venv
+1→ No Promt do VS Code, crie e ative o ambiente virtual:
+``` 
+Criar →     python -m venv .venv
+
 # Windows
-.venv\Scripts\activate
+Ativar →    .venv\Scripts\activate
 
 # Linux ou MacOS
-source .venv/bin/activate
+Ativar →    source .venv/bin/activate
+```
+
+2→ Instale os pacotes necessários no ambiente virtual:
+
+```bash
 pip install -r requirements.txt
 ``` 
 
+3→ Execute o arquivo abaixo para gerar o modelo de previsão e verifique a acurácia do modelo:
+```bash
+treina_modelo.py
+```
+
+4→ Execute o programa e clique no link gerado para visualizar localmente:
+```bash
+main.py
+normalmente = "http://127.0.0.1:8050/"
+```
 
 ## Problemas
+- Alto índice de espera na triagem de pacientes com suspeitas de doenças cardíacas.
+- Falta de entendimento das *features* dos exames no contexto geral.
+
 ## Requisitos do negócio
+- Criar um Dashboard para ajudar a prever pacientes com chances de doenças cardíacas.
+- Criar graficos para entender melhor os dados (*features*) sobre o estado de saúde de pessoas com doenças cardíacas.
+- Disponibilizar o dasboard online para interação do cliente (*usuário*).

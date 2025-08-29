@@ -33,6 +33,13 @@ def mostrar_pagina(pathname):
     elif pathname == '/graficos': 
         return paginas.graficos.layout 
     else: 
-        return html.P('pagina inicial') 
-     
+        return html.Div([
+            html.H2("🏠 Bem-vindo à Página Inicial do Dashboard de Doenças Cardíacas", 
+                    className='text-center mb-4', 
+                    style={'color': '#2c3e50'}),
+            html.P("Preencha o Formulário* para uma previsão sobre o estado de saúde do paciente ou visualize os Gráficos* e descubra insights sobre saúde cardiovascular.",
+                className='text-center', 
+                style={'fontSize': '18px', 'color': '#34495e'})
+        ]) 
+                
 app.run(debug=True) 
