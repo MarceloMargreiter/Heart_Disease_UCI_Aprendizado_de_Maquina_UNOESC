@@ -22,7 +22,7 @@
 
 1→ No Promt do VS Code, vá até o diretório dessignado ao projeto, crie e ative o ambiente virtual:
 ``` 
-Criar →     python -m venv .venv        (Obs.: Caso já exista, não há necessidade de executar novamente)
+Criar →     python -m venv .venv    (Obs.: Caso já exista, não há necessidade de executar novamente)
 
 # Windows
 Ativar →    .venv\Scripts\activate
