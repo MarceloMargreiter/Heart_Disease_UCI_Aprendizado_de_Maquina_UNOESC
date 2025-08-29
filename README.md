@@ -20,9 +20,9 @@
 
 ## Como executar o projeto
 
-1→ No Promt do VS Code, crie e ative o ambiente virtual:
+1→ No Promt do VS Code, vá até o diretório dessignado ao projeto, crie e ative o ambiente virtual:
 ``` 
-Criar →     python -m venv .venv
+Criar →     python -m venv .venv        (Obs.: Caso já exista, não há necessidade de executar novamente)
 
 # Windows
 Ativar →    .venv\Scripts\activate
@@ -39,13 +39,13 @@ pip install -r requirements.txt
 
 3→ Execute o arquivo abaixo para gerar o modelo de previsão e verifique a acurácia do modelo:
 ```bash
-treina_modelo.py
+Arquivo = "treina_modelo.py"
 ```
 
 4→ Execute o programa e clique no link gerado para visualizar localmente:
 ```bash
-main.py
-normalmente = "http://127.0.0.1:8050/"
+Programa = "main.py"
+Link = "http://127.0.0.1:8050/"
 ```
 
 ## Problemas
