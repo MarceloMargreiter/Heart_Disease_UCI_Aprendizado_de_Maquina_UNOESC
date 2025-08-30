@@ -42,4 +42,4 @@ def mostrar_pagina(pathname):
                 style={'fontSize': '18px', 'color': '#34495e'})
         ]) 
                 
-app.run(debug=True) 
+app.run(debug=False, port=8080, host='0.0.0.0') 

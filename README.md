@@ -45,7 +45,7 @@ Arquivo = "treina_modelo.py"
 4→ Execute o programa e clique no link gerado para visualizar localmente:
 ```bash
 Programa = "main.py"
-Link = "http://127.0.0.1:8050/"
+Link = "http://127.0.0.1:8050/" 
 ```
 
 ## Problemas
